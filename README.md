@@ -9,11 +9,7 @@ Crée un nouveau dossier dans le finder, puis dans le terminal aller dans le dos
 npm init vue@latest
 Choisir un nom et Yes pour tout
 
-<h2>Pour le serveur node.js : </h2>
-
-npm install cors
-npm install body-parser
-Pour le vue.js de node
+<h2>Pour le vue.js de node : </h2>
 npm install axios
 npm install vue bootstrap bootstrap-vue
 npm i pinia-plugin-persistedstate
