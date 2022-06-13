@@ -1,84 +1,104 @@
 <template>
-
-
-    <h1> Formulaire de contact </h1>
-    <br>
-    <p>SVP n'abandonner pas vos chats contacter nous pour trouver un arrangement </p>
-
-
-
-    <p>Renseigner les champs suivants...</p>
-
-    <br>
-    <br>
+ <div class="d-flex justify-content-center p-5">
+        <!-- il faut que le nom et le prenom sorte de la base de donnée  -->
+        <form id="border" class="p-5" novalidate>
+            <div class="d-flex flex-column align-items-center align">
+                    <h1>CONTACT</h1>
     <form class="row g-1 needs-validation" novalidate>
+   
+      
         <div class="form-floating mb-2">
-            <input type="text" class="form-control" id="floatingInput" placeholder="nom">
+            <input type="text" class="form-control fill-input" id="floatingInput" placeholder="Nom">
             <label for="floatingInput">Nom</label>
         </div>
 
-        <div class="form-floating mb-2">
-            <input type="text" class="form-control" @onkeyup.enter="" id="floatingPrenom" placeholder="Prénom">
-            <label for="floatingPrenom">Prénom</label>
+    <div class="form-floating mb-2">
+            <input type="text" class="form-control fill-input" id="floatingInput" placeholder="Prénom">
+            <label for="floatingInput">Prénom</label>
         </div>
 
         <div class="form-floating mb-2">
-            <input type="text" class="form-control" id="floatingInput" placeholder="adresse">
-            <label for="floatingInput">Adresse</label>
+            <input type="text" class="form-control fill-input" id="floatingInput" placeholder="mail">
+            <label for="floatingInput">Email</label>
         </div>
 
-        <div class="form-floating col-auto">
-            <input type="text" class="form-control" id="floatingInput" placeholder="cp">
-            <label for="floatingInput">Code Postal</label>
-        </div>
-        <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <div class="form-floating col-auto">
-            <input type="text" class="form-control" id="floatingInput" placeholder="Ville">
-            <label for="floatingInput">Ville</label>
-        </div>
-        <br>
         <div class="form-floating mb-2">
-            <input type="text" class="form-control" id="floatingInput" placeholder="mail">
-            <label for="floatingInput">Adresse mail</label>
+            <input type="password" class="form-control fill-input" id="floatingInput" placeholder="Objet">
+            <label for="floatingInput">Objet : </label>
         </div>
 
-        <div class="form-floating col-auto">
-            <input type="text" class="form-control" id="floatingInput" placeholder="Tél">
-            <label for="floatingInput">Tél</label>
-        </div>
-        <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-        <div class="form-floating col-auto mb-2">
-            <input type="text" class="form-control" id="floatingInput" placeholder="Mobile">
-            <label for="floatingInput">Mobile</label>
+<div class="form-floating mb-2">
+            <textarea type="password" class="form-control fill-input" id="floatingInput" placeholder="Sujet"></textarea>
+            <label for="floatingInput">Message : </label>
+           
         </div>
 
 
-
-        <br>
-        Possedez-vous un ou des chats?
-
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-                Non
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-            <label class="form-check-label" for="flexCheckChecked">
-                Oui
-            </label>
-        </div>
-
-        <br>
-        <center>
-            <div class="col-12">
-                <button class="btn btn-danger" type="submit">Envoyer</button>
+    
+  
+      
+  
+            <div >
+                <button class="btn btn-danger" type="submit">Envoyer message</button>
             </div>
-        </center>
+       
     </form>
+</div>
+</form>
+</div>
+
+
 
 </template>
+
+<style> body {
+    background-color: black;
+}
+
+#border {
+    border-width: 1px 2px 3px 2px;
+    border-style: solid;
+    border-color: black;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    background: #C7BCE4;
+    background: -webkit-linear-gradient(39deg, #C7BCE4, #F9CAD4, #E9A4C3 94%);
+    background: -moz-linear-gradient(39deg, #C7BCE4, #F9CAD4, #E9A4C3 94%);
+    background: -o-linear-gradient(39deg, #C7BCE4, #F9CAD4, #E9A4C3 94%);
+    background: linear-gradient(39deg, #C7BCE4, #F9CAD4, #E9A4C3 94%);
+
+
+}
+
+
+
+/* .align {
+    padding: 50px;
+    width: 900px;
+} */
+
+input {
+    margin-top: 10px;
+
+
+}
+
+h3 {
+    margin-top: 15px;
+}
+
+.fill-input {
+    min-width: 20rem;
+}
+
+.fill-input1 {
+    min-width: 2rem;
+}
+
+.fill-input2 {
+    min-width: 15rem;
+}</style>

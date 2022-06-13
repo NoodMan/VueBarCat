@@ -4,6 +4,7 @@
 </script>
 
 <template>
+<div id="retourtop5"></div>
     <section  class="et-hero-tabs">
 
 
@@ -15,22 +16,13 @@
             </button>
             <button id="border">
 
-                <RouterLink to="/connexion">Connexion</RouterLink>
+                <RouterLink to="/connection">Connexion</RouterLink>
             </button>
-            <!-- <form class="d-flex input-group w-auto">
-                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-                    aria-describedby="search-addon" />
-                <span class="input-group-text border-0" id="search-addon">
-                    <span class="material-icons">
-                        search
-                    </span>
-                </span>
-            </form> -->
-
-
+        
         </nav>
 
-        <img classe="size" src="../assets/pink-gradient-designify-2.png" alt="logo">
+        <img classe="size mt-2" src="../assets/logoblackcatcoffee.png" alt="logo">
+        <!-- faire css pour image pour enlever les br -->
         <br>
         <br>
         <br>
@@ -75,7 +67,7 @@
           
             <button id="border">
 
-                <RouterLink to="/accueil#retourtop">Accueil</RouterLink>
+                <RouterLink to="/home#retourtop">Accueil</RouterLink>
 
             </button>
         </section>
@@ -98,7 +90,7 @@
           
             <button id="border">
 
-                <RouterLink to="/charte">La Charte</RouterLink>
+                <RouterLink to="/rules">La Charte</RouterLink>
             </button>
         </section>
         <br>
@@ -108,7 +100,7 @@
            
             <button id="border">
 
-                <RouterLink to="/reservation">Reservation</RouterLink>
+                <RouterLink to="/booking">Reservation</RouterLink>
             </button>
         </section>
 
@@ -121,7 +113,7 @@
     <section class="et-slide" id="tab-angular">
       <h1>Connexion</h1>
       <h3>something about other</h3>
-      <RouterLink to="/connexion">Connexion</RouterLink>
+      <RouterLink to="/connection">Connexion</RouterLink>
     </section> -->
 
     </main>
@@ -129,5 +121,5 @@
 </template>
 
 <style>
-    @import '../assets/accueil.css';
+    @import '../assets/home.css';
 </style>

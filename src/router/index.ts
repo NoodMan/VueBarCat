@@ -8,13 +8,13 @@ const router = createRouter({
     {
       path: "/",
       name: "accueilhome",
-      component: () => import("../views/accueil.vue"),
+      component: () => import("../views/home.vue"),
     },
 
     {
-      path: "/accueil",
-      name: "accueil",
-      component: () => import("../views/accueil.vue"),
+      path: "/home",
+      name: "home",
+      component: () => import("../views/home.vue"),
     },
 
     {
@@ -27,14 +27,14 @@ const router = createRouter({
     },
 
     {
-      path: "/reservation",
-      name: "reservation",
-      component: () => import("../views/reservation.vue"),
+      path: "/booking",
+      name: "booking",
+      component: () => import("../views/booking.vue"),
     },
     {
-      path: "/charte",
-      name: "charte",
-      component: () => import("../views/charte.vue"),
+      path: "/rules",
+      name: "rules",
+      component: () => import("../views/rules.vue"),
     },
 
     {
@@ -50,9 +50,9 @@ const router = createRouter({
     },
 
     {
-      path: "/connexion",
-      name: "connexion",
-      component: () => import("../views/connexion.vue"),
+      path: "/connection",
+      name: "connection",
+      component: () => import("../views/connection.vue"),
     },
 
   ],

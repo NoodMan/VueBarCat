@@ -1,0 +1,143 @@
+/* d-flex flex-column align-items-center {
+    border: 1rem;
+} */
+
+
+
+
+
+
+<template>
+
+<div id="center">
+    <form
+      @submit.prevent="handleSubmit"
+      class="d-flex flex-column align-items-center">
+      <br />
+      <div class="col-md-4">
+        <h1>___ Login ___</h1>
+        <br />
+        <em>
+          <pre>
+ 👋🏼 Please log in 
+     to see the consultations...</pre
+          >
+        </em>
+        <br />
+        <center>
+          <label for="username" class="form-label">Username</label>
+        </center>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">
+            <span class="material-icons">person</span></span
+          >
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter your username..."
+            v-model="user.username"
+            id="username"
+            name="username"
+          />
+        </div>
+        <br />
+        <center>
+          <label for="username" class="form-label">Password</label>
+        </center>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">
+            <span class="material-icons"> password </span></span
+          >
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Enter your password..."
+            v-model="user.password"
+            id="password"
+            name="password"
+          />
+        </div>
+        <br />
+        <center>
+          <input type="submit" value="Login" name="valider" id="valider" />
+        </center>
+    </div>
+    </form>
+  </div>
+</template>
+
+<script>
+// import MonMixin from "../mixins/fetch";
+// import { mapState, mapWritableState } from "pinia";
+// import { useUserStore } from "../stores/token";
+
+// export default {
+//   mixins: [MonMixin],
+//   data() {
+//     return {
+//       user: {
+//         username: "",
+//         password: "",
+//       },
+//     };
+//   },
+//   computed: {
+//     // ACTION
+//     ...mapWritableState(useUserStore, ["token", "refresh_token"]),
+//     ...mapState(useUserStore, ["getToken", "getRefreshToken"]),
+//   },
+//   methods: {
+//     handleSubmit() {
+//       this.fetchLogin(this.user).then((credentials) => {
+//         this.token = credentials?.token;
+//         this.refresh_token = credentials?.refresh_token;
+
+//         this.$router.push("consultations");
+//       });
+//     },
+//   },
+// };
+</script>
+
+<style >
+body {
+  background-color: blanchedalmond;
+}
+form {
+  margin: 50px;
+  display: flexbox;
+  justify-content: center;
+  color: blueviolet;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  font-size: 25px;
+}
+.form-label {
+  color: rgb(233, 109, 136);
+}
+
+pre {
+  color: rgb(22, 126, 89);
+  font-size: 15px;
+}
+</style>
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #eab9ce;
+  padding: 10px;
+  border: 3px solid #000000;
+  border-radius: 5px;
+  margin: auto;
+}
+
+<p>SVP n'abandonner pas vos chats contacter nous pour trouver un arrangement </p>

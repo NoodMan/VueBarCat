@@ -1,120 +1,226 @@
 <script setup lang="ts">
-import connexion from "./connexion.vue"
 </script>
 
 <template>
-    <br>
-    <center>
-        <br>
-        <h1> Création d'un compte </h1>
-        <br>
-    </center>
-    <br>
+  <div id="retourtop1"></div>
+  <div class="d-flex justify-content-center p-5">
+    <!-- il faut que le nom et le prenom sorte de la base de donnée  -->
+    <form id="border" class="p-5" novalidate>
+      <div class="d-flex flex-column align-items-center align">
+        <h1>INSCRIPTION</h1>
 
-    <br>
+        <div class="row">
+          <div class="col">
+            <div class="form-floating mb-2">
+              <input
+                type="text"
+                class="form-control fill-input"
+                id="floatingInput"
+                placeholder="nom"
+              />
+              <label for="floatingInput">Nom</label>
+            </div>
+          </div>
 
-
-    <p>Renseigner les champs suivants...</p>
-
-    <br>
-    <br>
-    <form class="row g-1 needs-validation" novalidate>
-        <div class="form-floating mb-2">
-            <input type="text" class="form-control" id="floatingInput" placeholder="nom">
-            <label for="floatingInput">Nom</label>
+          <div class="col">
+            <div class="form-floating mb-2">
+              <input
+                type="text"
+                class="form-control fill-input"
+                id="floatingPrenom"
+                placeholder="Prénom"
+              />
+              <label for="floatingPrenom">Prénom</label>
+            </div>
+          </div>
         </div>
 
         <div class="form-floating mb-2">
-            <input type="text" class="form-control" id="floatingPrenom" placeholder="Prénom">
-            <label for="floatingPrenom">Prénom</label>
+          <input
+            type="text"
+            class="form-control fill-input1"
+            id="floatingInput"
+            placeholder="adresse"
+          />
+          <label for="floatingInput">Adresse</label>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="form-floating col-auto">
+              <input
+                type="text"
+                class="form-control fill-input"
+                id="floatingInput"
+                placeholder="cp"
+              />
+              <label for="floatingInput">Code Postal</label>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-floating col-auto">
+              <input
+                type="text"
+                class="form-control fill-input"
+                id="floatingInput"
+                placeholder="Ville"
+              />
+              <label for="floatingInput">Ville</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-floating mb-2">
+          <input
+            type="text"
+            class="form-control fill-input1"
+            id="floatingInput"
+            placeholder="mail"
+          />
+          <label for="floatingInput">Adresse mail</label>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-floating col-auto">
+              <input
+                type="text"
+                class="form-control fill-input"
+                id="floatingInput"
+                placeholder="Tél"
+              />
+              <label for="floatingInput">Tél</label>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-floating col-auto mb-2">
+              <input
+                type="text"
+                class="form-control fill-input"
+                id="floatingInput"
+                placeholder="Mobile"
+              />
+              <label for="floatingInput">Mobile</label>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex mx-5 gap-1">
+          <input
+            min="1"
+            max="31"
+            type="number"
+            class="form-control"
+            placeholder="jour de naissance"
+          />
+
+          <input type="text" class="form-control" placeholder="Mois" />
+
+          <input
+            min="2022"
+            max="2023"
+            type="number"
+            class="form-control"
+            placeholder="Année"
+          />
         </div>
 
         <div class="form-floating mb-2">
-            <input type="text" class="form-control" id="floatingInput" placeholder="adresse">
-            <label for="floatingInput">Adresse</label>
-        </div>
-
-        <div class="form-floating col-auto">
-            <input type="text" class="form-control" id="floatingInput" placeholder="cp">
-            <label for="floatingInput">Code Postal</label>
-        </div>
-        <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <div class="form-floating col-auto">
-            <input type="text" class="form-control" id="floatingInput" placeholder="Ville">
-            <label for="floatingInput">Ville</label>
-        </div>
-        <br>
-        <div class="form-floating mb-2">
-            <input type="text" class="form-control" id="floatingInput" placeholder="mail">
-            <label for="floatingInput">Adresse mail</label>
-        </div>
-
-        <div class="form-floating col-auto">
-            <input type="text" class="form-control" id="floatingInput" placeholder="Tél">
-            <label for="floatingInput">Tél</label>
-        </div>
-        <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-        <div class="form-floating col-auto mb-2">
-            <input type="text" class="form-control" id="floatingInput" placeholder="Mobile">
-            <label for="floatingInput">Mobile</label>
-        </div>
-
-        <div class="form-floating col-lg-3">
-            <input min="1" max="31" type="number" class="form-control" id="floatingInput" placeholder="Tél">
-            <label for="floatingInput">jour</label>
-        </div>
-        <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-        <div class="form-floating col-lg-3">
-            <input type="text" class="form-control" id="floatingInput" placeholder="Mobile">
-            <label for="floatingInput">mois</label>
-        </div>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-        <div class="form-floating col-lg-3 mb-2">
-            <input min="1950" max="2022" type="number" class="form-control" id="floatingInput" placeholder="jour">
-            <label for="floatingInput">Année </label>
-        </div>
-
-        <div class="form-floating mb-2">
-            <input type="password" class="form-control" id="floatingInput" placeholder="mail">
-            <label for="floatingInput">Mot de passe</label>
+          <input
+            type="password"
+            class="form-control fill-input1"
+            id="floatingInput"
+            placeholder="mail"
+          />
+          <label for="floatingInput">Mot de passe</label>
         </div>
         <div class="form-floating mb-2">
-            <input type="password" class="form-control" id="floatingInput" placeholder="mail">
-            <label for="floatingInput">Confirmer mot de passe</label>
+          <input
+            type="password"
+            class="form-control fill-input1"
+            id="floatingInput"
+            placeholder="mail"
+          />
+          <label for="floatingInput">Confirmer mot de passe</label>
         </div>
 
-        <br>
         Possedez-vous un ou des chats?
 
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-          <label class="form-check-label" for="flexCheckDefault">
-            Non
-          </label>
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label" for="flexCheckDefault"> Non </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-          <label class="form-check-label" for="flexCheckChecked">
-            Oui
-          </label>
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+            checked
+          />
+          <label class="form-check-label" for="flexCheckChecked"> Oui </label>
         </div>
-      <br>
-    
-  
-        <br>
-        <center>
-            <div class="col-12">
-                <button class="btn btn-danger" type="submit">Inscription</button>
-            </div>
-        </center>
+
+        <div>
+          <button class="btn btn-danger" type="submit">Inscription</button>
+        </div>
+        <div>
+          <i
+            ><RouterLink to="/connection#retourtop2"
+              >Déjà un compte ?
+            </RouterLink></i
+          >
+        </div>
+      </div>
     </form>
-
-
-
+  </div>
 </template>
+
+<style >
+body {
+  background-color: black;
+}
+
+#border {
+  border-width: 1px 2px 3px 2px;
+  border-style: solid;
+  border-color: black;
+  padding: 0 10px;
+}
+
+form {
+  display: flex;
+  background: #c7bce4;
+  background: -webkit-linear-gradient(39deg, #c7bce4, #f9cad4, #e9a4c3 94%);
+  background: -moz-linear-gradient(39deg, #c7bce4, #f9cad4, #e9a4c3 94%);
+  background: -o-linear-gradient(39deg, #c7bce4, #f9cad4, #e9a4c3 94%);
+  background: linear-gradient(39deg, #c7bce4, #f9cad4, #e9a4c3 94%);
+}
+
+/* .align {
+        padding: 50px;
+        width: 900px;
+    } */
+
+input {
+  margin-top: 10px;
+}
+
+h3 {
+  margin-top: 15px;
+}
+
+.fill-input {
+  min-width: 10rem;
+}
+
+.fill-input1 {
+  min-width: 25rem;
+}
+
+.fill-input2 {
+  min-width: 15rem;
+}
+</style>
