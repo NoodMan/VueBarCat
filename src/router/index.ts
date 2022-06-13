@@ -6,6 +6,12 @@ const router = createRouter({
   routes: [
 
     {
+      path: "/",
+      name: "accueilhome",
+      component: () => import("../views/accueil.vue"),
+    },
+
+    {
       path: "/accueil",
       name: "accueil",
       component: () => import("../views/accueil.vue"),
@@ -44,15 +50,20 @@ const router = createRouter({
     },
 
     {
-    path: "/connexion",
-    name: "connexion",
-    component: () => import("../views/connexion.vue"),
+      path: "/connexion",
+      name: "connexion",
+      component: () => import("../views/connexion.vue"),
     },
 
-   
-    
-    
   ],
+
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        el: to.hash
+      }
+    }
+  },
 });
 
 export default router;
