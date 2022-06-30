@@ -1,220 +1,197 @@
-
-<script setup lang="ts">
-import cats from "./cats.vue";
-</script>
-
 <template>
+  <h3 class="">Facts about Cats!</h3>
 
-  <div class="et-hero-tabs-container">
-    <a class="et-hero-tab inline-icon" href="#tab-es6"
-      ><span class="material-icons inline-icon"> home </span> Accueil</a
-    >
-    
-    
-    <a class="et-hero-tab inline-icon" href="#tab-flexbox">
-   
-
-                <RouterLink to="/cats#retourtop5">Les Chats</RouterLink>
-          
-      <span class="material-icons inline-icon"> pets </span>Les chats</a>
-
-
-    <a class="et-hero-tab inline-icon" href="#tab-react"
-      ><span class="material-icons inline-icon"> article </span>La charte</a
-    ><a class="et-hero-tab inline-icon" href="#tab-angular"
-      ><span class="material-icons inline-icon"> edit_calendar </span
-      >Reservation</a
-    ><!-- &lt;a class=&quot;et-hero-tab&quot; href=&quot;#tab-other&quot;&gt;Inscription&lt;/a&gt;
-       &lt;a class=&quot;et-hero-tab&quot; href=&quot;#tab-con&quot;&gt;Connexion&lt;/a&gt; --><!-- &lt;span class=&quot;et-hero-tab-slider&quot;&gt;&lt;/span&gt; -->
-  </div>
-  <div class="container">
-    <h1>
-      <span>Les chats présent</span>
-      <span>pour des moments de boheur</span>
-    </h1>
-
-    <button id="border">
-      <RouterLink to="/inscription">Inscription</RouterLink>
-    </button>
-    <button id="border">
-      <RouterLink to="/connection">Connection</RouterLink>
-    </button>
-    <div class="card-container">
-      <div class="card-wrapper">
-        <div class="card">
-          <div class="card-front">
-            <p>Sheitan</p>
-            <center>
-              <img src="../assets/photostudio-8-designify.png" alt="" />
-            </center>
-            <p class="card-price">Vous attends...</p>
-            <i class="arrow-icon fas fa-arrow-right"></i>
-          </div>
-          <div class="card-back">
-            <a href="#" class="btn">Reserver?</a>
+  <div class="wrapper">
+    <div class="avatar"><span class="material-icons size">
+        pets
+      </span></div>
+    <div class="card-align">
+      <div class="card-container">
+        <div class="card-wrapper">
+          <div class="card">
+            <div class="card-front">
+              <p>Sheitan</p>
+              <center>
+                <img src="../assets/photostudio-8-designify.png" alt="" />
+              </center>
+              <p class="card-price">Vous attends...</p>
+              <i class="arrow-icon fas fa-arrow-right"></i>
+            </div>
+            <div class="card-back">
+              <a href="#" class="btn">Reserver?</a>
+            </div>
           </div>
         </div>
+
       </div>
 
-      <div class="card-wrapper">
-        <div class="card">
-          <div class="card-front">
-            <p>Sheitan</p>
-            <center>
-              <img src="../assets/photostudio-8-designify.png" alt="" />
-            </center>
-            <p class="card-price">Vous attends...</p>
-            <i class="arrow-icon fas fa-arrow-right"></i>
-          </div>
-          <div class="card-back">
-            <a href="#" class="btn">Reserver?</a>
+      <div class="card-container">
+        <div class="card-wrapper">
+          <div class="card">
+            <div class="card-front">
+              <p>Sheitan</p>
+              <center>
+                <img src="../assets/photostudio-8-designify.png" alt="" />
+              </center>
+              <p class="card-price">Vous attends...</p>
+              <i class="arrow-icon fas fa-arrow-right"></i>
+            </div>
+            <div class="card-back">
+              <a href="#" class="btn">Reserver?</a>
+            </div>
           </div>
         </div>
+
       </div>
 
-      <div class="card-wrapper">
-        <div class="card">
-          <div class="card-front">
-            <p>Sheitan</p>
-            <center>
-              <img src="../assets/photostudio-8-designify.png" alt="" />
-            </center>
-            <p class="card-price">Vous attends...</p>
-            <i class="arrow-icon fas fa-arrow-right"></i>
+      <div class="card-container">
+        <div class="card-wrapper">
+          <div class="card">
+            <div class="card-front">
+              <p>Sheitan</p>
+              <center>
+                <img src="../assets/photostudio-8-designify.png" alt="" />
+              </center>
+              <p class="card-price">Vous attends...</p>
+              <i class="arrow-icon fas fa-arrow-right"></i>
+            </div>
+            <div class="card-back">
+              <a href="#" class="btn">Reserver?</a>
+            </div>
           </div>
-          <div class="card-back">
-            <a href="#" class="btn">Reserver?</a>
-          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container-main bg-blue">
+      <div class="row">
+        <h5>New fact!</h5>
+        <div class="circle"><span class="material-icons inline-icon">
+            pets
+          </span></div>
+      </div>
+      <div class="row">
+        <div class="share-toggle hidden">
+        </div>
+        <h5>Share!</h5>
+
+        <div class="circle">
         </div>
       </div>
     </div>
+
+    <button class="space" id="border2">
+
+      <RouterLink to="/home#retourtop">
+        <span class="material-icons">
+          home
+        </span>Accueil
+      </RouterLink>
+      <RouterLink to="/concept"><span class="material-icons">
+          emoji_objects
+        </span>Concept</RouterLink>
+      <RouterLink to="/cats"><span class="material-icons">
+          pets
+        </span>Les chats</RouterLink>
+      <RouterLink to="/rules"><span class="material-icons">
+          article
+        </span>La charte</RouterLink>
+      <RouterLink to="/booking"><span class="material-icons">
+          edit_calendar
+        </span>Réservation</RouterLink>
+      <RouterLink to="/logout">Déconnexion</RouterLink>
+    </button>
+
   </div>
 </template>
 
+
+
+<script>
+  import { loginStore } from "../stores/login";
+  import { mapState } from "pinia";
+
+  export default {
+
+    // methods: {
+    //   check_auth() {
+    //     if (this.user_logged.user.role == "USER") {
+    //       this.$router.push("/connection");
+    //     }
+    //   }
+    // },
+
+    // mounted() {
+    //   this.check_auth()
+    // },
+
+    // computed: {
+    //   ...mapState(loginStore, ["user_logged"]),
+    // }
+  }
+</script>
+
+
+
+
+
+
+
+
 <style>
-@import "../assets/cats.css";
-
-body {
-  font-family: "Century Gothic", "Lato", sans-serif;
-}
-
-button {
-  border: #636463;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  color: #636463;
-}
-
-.et-hero-tabs,
-.et-slide {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  position: relative;
-  background: rgb(0, 0, 0);
-  text-align: center;
-  padding: 0 2em;
-
-  h1 {
-    font-size: 2rem;
-    margin: 0;
-    letter-spacing: 1rem;
+  .wrapper div.container-main:last-child {
+    padding-bottom: 2em;
   }
 
-  h3 {
-    font-size: 1rem;
-    letter-spacing: 0.3rem;
-    opacity: 0.6;
-  }
-}
+  .avatar {
+    position: relative;
+    z-index: 5;
+    border-radius: 50%;
+    transform: translate(0, -50%);
+    margin-bottom: -3em;
 
-#border {
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  background: #c7bce4;
-  background: -webkit-linear-gradient(39deg, #c7bce4, #f9cad4, #e9a4c3 94%);
-  background: -moz-linear-gradient(39deg, #c7bce4, #f9cad4, #e9a4c3 94%);
-  background: -o-linear-gradient(39deg, #c7bce4, #f9cad4, #e9a4c3 94%);
-  background: linear-gradient(39deg, #c7bce4, #f9cad4, #e9a4c3 94%);
-  text-decoration-color: #000;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6em;
+    height: 6em;
+    background: #FEFEFE;
+    border-radius: 50%;
+    border: 0.5em solid rgba(0, 0, 0, 0.03);
 
-.et-hero-tabs-container {
-  display: flex;
-  flex-direction: row;
-  /* position: absolute; */
-  bottom: 0;
-  width: 100%;
-  height: 70px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  background: #636463;
-  z-index: 10;
-
-  &--top {
-    position: fixed;
-    top: 0;
-  }
-}
-
-.et-hero-tab {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-  color: #000;
-  letter-spacing: 0.1rem;
-  transition: all 0.5s ease;
-  font-size: 0.8rem;
-
-  &:hover {
-    color: white;
-    background: rgba(102, 177, 241, 0.8);
-    transition: all 0.5s ease;
-  }
-}
-
-.et-hero-tab-slider {
-  position: absolute;
-  bottom: 0;
-  width: 0;
-  height: 6px;
-  background: #636463;
-  transition: left 0.3s ease;
-}
-
-@media (min-width: 800px) {
-  .et-hero-tabs,
-  .et-slide {
-    h1 {
-      font-size: 3rem;
-    }
-
-    h3 {
-      font-size: 1rem;
-    }
   }
 
-  .et-hero-tab {
-    font-size: 1rem;
+
+
+
+  a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: 0.4s;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
   }
-}
 
-img {
-  border-radius: 10px;
-  margin-block: auto;
-  /* width : 550px; */
-}
+  #border2 {
 
-@media (max-width: 480px) {
-  .et-hero-tabs-container {
+    display: flex;
+    justify-content: space-between;
+    position: static;
+    font-size: 20px !important;
+    border: #636463;
+    letter-spacing: 0.1rem;
+    text-decoration-color: #000;
+
+  }
+
+  material-icons {
+    vertical-align: top;
+    font-size: 25px !important;
+  }
+
+  .space {
     display: flex;
     flex-direction: row;
     position: absolute;
@@ -225,23 +202,304 @@ img {
     background: #636463;
     z-index: 10;
 
-    &--top {
-      position: fixed;
-      top: 0;
+  }
+
+  .size {
+    font-size: 7rem;
+    animation: pulsate 1.5s linear infinite;
+  }
+
+  /* base style + reset */
+  * {
+    box-sizing: border-box;
+    /* padding: 0;
+  margin: 0px; */
+    text-align: center;
+  }
+
+  html {
+    height: 100vh;
+    /* set viewport constraint */
+    min-height: 100%;
+    /* enforce height */
+    font-size: 62.5%;
+    background-color: black;
+  }
+
+  body {
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: ;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.07);
+  }
+
+
+  /* Layout: wrapper, conatiners */
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 90rem;
+    margin: 0 auto;
+
+    border-top: 6px solid #e5a8de;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    background: #C7BCE4;
+    background: -webkit-linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
+    background: -moz-linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
+    background: -o-linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
+    background: linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
+
+  }
+
+  .container-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 3rem;
+  }
+
+
+
+
+
+
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+  }
+
+
+
+  /* Elements */
+  h3 {
+    margin: 1em 0 3em 0;
+  }
+
+  h5 {
+    margin-bottom: 1rem;
+  }
+
+
+
+
+
+
+  @keyframes pulsate {
+    0% {
+      transform: scale(1.1, 1.1);
+    }
+
+    50% {
+      transform: scale(1.2, 1.2);
+    }
+
+    100% {
+      transform: scale(1.1, 1.1);
+    }
+  }
+
+  .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 7rem;
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 50%;
+    border: 0.7rem solid rgba(0, 0, 0, 0.03);
+    transition: all 0.3s;
+  }
+
+  .circle:hover {
+    transform: scale(1.1);
+  }
+
+
+
+
+
+
+
+
+
+  @import "../assets/cats.css";
+
+
+  .card-align {
+    margin: 80px;
+  }
+
+  @media (min-width: 1024px) {
+    .about {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
     }
   }
 
   img {
-    width: 100%;
+    width: 200px;
+
   }
-}
 
-nav {
-  border-radius: 10px;
-}
+  * {
 
-.inline-icon {
-  vertical-align: middle;
-  font-size: 25px !important;
-}
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #000000;
+    font-family: "Lato", sans-serif;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  h1 {
+    color: #1a2f42;
+    margin: 20px 0;
+    padding-bottom: 20px;
+
+  }
+
+  h1 span {
+    display: block;
+  }
+
+  h1 span:nth-child(1) {
+    font-weight: normal;
+    color: #e99ad9;
+  }
+
+  .card-container {
+    display: inline-grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 30px;
+    margin: 80px 0;
+    margin: 10px;
+
+
+
+  }
+
+  .card-wrapper {
+    position: relative;
+    min-height: 350px;
+    perspective: 2000px;
+    perspective-origin: top;
+    justify-content: space-between;
+    justify-content: space-around;
+  }
+
+  .card-wrapper:hover .card {
+    transform: rotateY(180deg);
+  }
+
+  .card {
+    position: relative;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+    color: white;
+    font-weight: bold;
+  }
+
+  .card-front,
+  .card-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    border-radius: 8px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  .card-front {
+    background: #C7BCE4;
+    background: -webkit-linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
+    background: -moz-linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
+    background: -o-linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
+    background: linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD494%);
+    ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card-wrapper:nth-child(even) .card-front {
+    background-color: #aeceed;
+  }
+
+  .card-front p {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .arrow-icon {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+  }
+
+  .card-price {
+    font-size: 45px;
+  }
+
+  .card-back {
+    background: #de8ada;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .card-wrapper:nth-child(even) .card-back {
+    background-color: #1a2f42;
+  }
+
+  .card-back a {
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: normal;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+    transition:
+      background-color 0.3s ease-out,
+      color 0.3s ease-out;
+  }
+
+  .card-wrapper:nth-child(odd) .card-back a:hover {
+    background-color: #61b1fc;
+    color: #fff;
+  }
+
+  .card-wrapper:nth-child(even) .card-back a:hover {
+    background-color: #ed5d34;
+    color: #fff;
+  }
 </style>

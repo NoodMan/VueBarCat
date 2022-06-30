@@ -4,122 +4,132 @@
 </script>
 
 <template>
-<div id="retourtop5"></div>
-    <section  class="et-hero-tabs">
+    <!-- <div id="retourtop5"></div> -->
 
-
-        <nav class="navbar navbar nav justify-content-end">
-
+    <section class="et-hero-tabs">
+        <nav class="navbar navbar nav">
+            <!-- justify-content-end = bootstrap pour espace entre bouton -->
             <button id="border">
 
+                <span class="material-icons">
+                    person_add
+                </span>
                 <RouterLink to="/inscription">Inscription</RouterLink>
             </button>
             <button id="border">
 
+                <span class="material-icons">
+                    login
+                </span>
                 <RouterLink to="/connection">Connexion</RouterLink>
             </button>
-        
+
         </nav>
 
-        <img classe="size mt-2" src="../assets/logoblackcatcoffee.png" alt="logo">
+        <img classe="" src="../assets/logoblackcatcoffee.png" alt="logo">
         <!-- faire css pour image pour enlever les br -->
         <br>
         <br>
-        <br>
-        <br>
-        <br>
 
+    
+            <button class="space" id="border2">
+                <!-- <RouterLink to="/home#retourtop"> -->
+                <RouterLink to="/welcome">
+                    <span class="material-icons">
+                        home
+                    </span>Accueil
+                </RouterLink>
+                <RouterLink to="/concept"><span class="material-icons">
+                        emoji_objects
+                    </span>Concept</RouterLink>
+                <RouterLink to="/cats"><span class="material-icons">
+                        pets
+                    </span>Les chats</RouterLink>
+                <RouterLink to="/rules"><span class="material-icons">
+                        article
+                    </span>La charte</RouterLink>
+                <RouterLink to="/booking"><span class="material-icons">
+                        edit_calendar
+                    </span>Réservation</RouterLink>
+                <RouterLink to="/logout">Déconnexion</RouterLink>
 
-
-        <!-- <h2>Hac ex c al aerario filia Scipionis, cum nobilitas florem adultae virginis diuturnum absentia pauperis.</h2> -->
-
-
-
-
-
-        <div class="et-hero-tabs-container">
-
-
-            <a class="et-hero-tab inline-icon" href="#tab-es6">
-                <span class="material-icons inline-icon">
-                    home
-                </span> Accueil</a>
-            <a class="et-hero-tab inline-icon" href="#tab-flexbox"><span class="material-icons inline-icon">
-                    pets
-                </span>Les chats</a>
-            <a class="et-hero-tab inline-icon" href="#tab-react"><span class="material-icons inline-icon">
-                    article
-                </span>La charte</a>
-            <a class="et-hero-tab inline-icon" href="#tab-angular"><span class="material-icons inline-icon">
-                    edit_calendar
-                </span>Reservation</a>
-            <!-- <a class="et-hero-tab" href="#tab-other">Inscription</a>
-       <a class="et-hero-tab" href="#tab-con">Connexion</a> -->
-            <!-- <span class="et-hero-tab-slider"></span> -->
-        </div>
+            </button>
+     
     </section>
-    <br>
-    <!-- Main -->
-    <main class="et-main">
-        <section class="et-slide" id="tab-es6">
-            <h1>Accueil</h1>
-            <h3>bla bla bla bla bla</h3>
-          
-            <button id="border">
-
-                <RouterLink to="/home#retourtop">Accueil</RouterLink>
-
-            </button>
-        </section>
-        <br>
-        <section class="et-slide" id="tab-flexbox">
-            <h1> Les chats </h1>
-            <h3>bla bla bla bla bla</h3>
-
-            <button id="border">
-
-                <RouterLink to="/cats">Les Chats</RouterLink>
-            </button>
-
-          
-        </section>
-        <br>
-        <section class="et-slide" id="tab-react">
-            <h1>La Charte</h1>
-            <h3>bla bla bla bla bla</h3>
-          
-            <button id="border">
-
-                <RouterLink to="/rules">La Charte</RouterLink>
-            </button>
-        </section>
-        <br>
-        <section class="et-slide" id="tab-angular">
-            <h1>Reservation</h1>
-            <h3>bla bla bla bla bla</h3>
-           
-            <button id="border">
-
-                <RouterLink to="/booking">Reservation</RouterLink>
-            </button>
-        </section>
-
-        <!-- <section class="et-slide" id="tab-angular">
-      <h1>Inscription</h1>
-      <h3>something about other</h3>
-       <RouterLink to="/inscription">Inscription</RouterLink>
-    </section>
-    <br>
-    <section class="et-slide" id="tab-angular">
-      <h1>Connexion</h1>
-      <h3>something about other</h3>
-      <RouterLink to="/connection">Connexion</RouterLink>
-    </section> -->
-
-    </main>
 
 </template>
 
 <style>
     @import '../assets/home.css';
+
+    h5 {
+        font-size: 50px;
+    }
+
+    #tab-es6 {
+        background: #C7BCE4;
+        background: -webkit-linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
+        background: -moz-linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
+        background: -o-linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
+        background: linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
+        border-style: solid;
+        border-width: 70px;
+    }
+
+    #tab-flexbox {
+        background-color: white;
+    }
+
+    i {
+        align-items: center;
+    }
+
+   
+
+    span {
+        vertical-align: top;
+        font-size: 25px !important;
+    }
+
+    #border2 {
+
+        display: flex;
+        justify-content: space-between;
+        font-size: 22px !important;
+        letter-spacing: 0.1rem;
+        
+    }
+
+    .space {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        /* height: 70px; */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        background: #636463;
+        z-index: 10;
+    }
+
+    p {
+        font-size: 55px;
+        letter-spacing: 0.2rem;
+    }
+
+    .slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        height: 100vh;
+        position: relative;
+        background: rgb(0, 0, 0);
+        text-align: center;
+        padding: 0 2em;
+        display: grid;
+    }
+
+
+
 </style>

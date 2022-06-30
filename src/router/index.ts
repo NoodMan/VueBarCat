@@ -18,11 +18,14 @@ const router = createRouter({
     },
 
     {
+      path: "/welcome",
+      name: "welcome",
+      component: () => import("../views/welcome.vue"),
+    },
+
+    {
       path: "/cats",
       name: "cats",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import("../views/cats.vue"),
     },
 
@@ -55,6 +58,27 @@ const router = createRouter({
       component: () => import("../views/connection.vue"),
     },
 
+    {
+      path: "/concept",
+      name: "concept",
+      component: () => import("../views/concept.vue"),
+    },
+    {
+      path: "/logout",
+      name: "logout",
+      component: () => import("../views/logout.vue"),
+    },
+    {
+      path: "/list_table",
+      name: "list_table",
+      component: () => import("../views/listTable.vue"),
+    },
+
+    {
+      path: "/free_table",
+      name: "free_table",
+      component: () => import("../views/free_table.vue"),
+    },
   ],
 
   scrollBehavior(to, from, savedPosition) {
@@ -65,5 +89,7 @@ const router = createRouter({
     }
   },
 });
+
+
 
 export default router;

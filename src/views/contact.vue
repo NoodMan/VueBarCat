@@ -66,10 +66,10 @@
 form {
     display: flex;
     background: #C7BCE4;
-    background: -webkit-linear-gradient(39deg, #C7BCE4, #F9CAD4, #E9A4C3 94%);
-    background: -moz-linear-gradient(39deg, #C7BCE4, #F9CAD4, #E9A4C3 94%);
-    background: -o-linear-gradient(39deg, #C7BCE4, #F9CAD4, #E9A4C3 94%);
-    background: linear-gradient(39deg, #C7BCE4, #F9CAD4, #E9A4C3 94%);
+    background: -webkit-linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
+    background: -moz-linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
+    background: -o-linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
+    background: linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
 
 
 }

@@ -10,11 +10,25 @@ button {
 
 a {
     text-decoration: none;
+    margin: 7px;
+    /* display: block ruby; */
 
 }
 
+@media (hover: hover) {
+    a:hover {
+      background: #C7BCE4; 
+  background: -webkit-linear-gradient(39deg,#acbdf5, #E9A4C3, #F9CAD4 94%);
+  background: -moz-linear-gradient(39deg,#acbdf5, #E9A4C3, #F9CAD4 94%);
+  background: -o-linear-gradient(39deg,#acbdf5, #E9A4C3, #F9CAD4 94%);
+  background: linear-gradient(39deg,#acbdf5, #E9A4C3, #F9CAD4 94%);
+    }
+  } 
+
 a:hover {
     color: #636463;
+   
+   
     }
 
 .et-hero-tabs,
@@ -28,9 +42,10 @@ a:hover {
     background: rgb(0, 0, 0);
     text-align: center;
     padding: 0 2em;
+    display: grid;
 
 
-    h1 {
+h1 {
         font-size: 2rem;
         margin: 0;
         letter-spacing: 1rem;
@@ -44,14 +59,14 @@ a:hover {
 }
 
 #border {
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
+    margin: 0px !important;
+    padding: 10px !important;
+    border-radius: 10px !important;
     background: #C7BCE4;
-    background: -webkit-linear-gradient(39deg, #C7BCE4, #F9CAD4, #E9A4C3 94%);
-    background: -moz-linear-gradient(39deg, #C7BCE4, #F9CAD4, #E9A4C3 94%);
-    background: -o-linear-gradient(39deg, #C7BCE4, #F9CAD4, #E9A4C3 94%);
-    background: linear-gradient(39deg, #C7BCE4, #F9CAD4, #E9A4C3 94%);
+    background: -webkit-linear-gradient(39deg,#acbdf5, #E9A4C3, #F9CAD4 94%);
+    background: -moz-linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
+    background: -o-linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
+    background: linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
     text-decoration-color: #000;
 }
 
@@ -65,7 +80,7 @@ a:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     background: #636463;
     z-index: 10;
-
+  
     &--top {
         position: fixed;
         top: 0;
@@ -73,6 +88,7 @@ a:hover {
 }
 
 .et-hero-tab {
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,6 +107,7 @@ a:hover {
 }
 
 .et-hero-tab-slider {
+   
     position: absolute;
     bottom: 0;
     width: 0;
@@ -119,9 +136,9 @@ a:hover {
 
 
 img {
-    border-radius: 10px;
-    margin-block: auto;
-    /* width : 550px; */
+    border-radius: 10px !important;
+    margin-block: auto !important;
+    width : 550px !important;
 
 
 }
@@ -145,7 +162,7 @@ img {
     }
 
 img {
-    width: 100%;
+    width: 100% !important;
 }
 
 }
@@ -159,4 +176,5 @@ nav {
 .inline-icon {
     vertical-align: middle;
     font-size: 25px !important;
+
 }
