@@ -10,31 +10,31 @@
       <div class="row">
         <div class="col">
           <div class="form-floating mb-2">
-            <input type="text" class="form-control fill-input" id="floatingInput5" placeholder="Nom" />
+            <input type="text" class="form-control fill-input1"  v-model.trim="user.lastname" id="floatingInput5" placeholder="Nom" required/>
             <label for="floatingInput5">Nom</label>
           </div>
         </div>
         <div class="col">
           <div class="form-floating mb-2">
-            <input type="text" class="form-control fill-input" id="floatingInput5" placeholder="Prénom" />
+            <input type="text" class="form-control fill-input1" v-model.trim="user.firstname" id="floatingInput5" placeholder="Prénom" required/>
             <label for="floatingInput5">Prénom</label>
           </div>
         </div>
       </div>
       <div class="form-floating mb-2">
-        <input type="email" class="form-control fill-input" id="floatingInput6" placeholder="mail" />
+        <input type="email" class="form-control fill-input" v-model.trim="user.email" id="floatingInput6" placeholder="mail" required/>
         <label for="floatingInput6">Adresse mail</label>
       </div>
       <div class="row">
         <div class="col">
           <div class="form-floating col-auto">
-            <input type="tel" class="form-control fill-input" id="floatingInput7" placeholder="Tél" />
+            <input type="tel" class="form-control fill-input1" v-model.trim="user.tel" id="floatingInput7" placeholder="Tél" required />
             <label for="floatingInput7">Tél</label>
           </div>
         </div>
         <div class="col">
           <div class="form-floating col-auto">
-            <input type="text" class="form-control fill-input" id="floatingInput8" placeholder="Mobile" />
+            <input type="text" class="form-control fill-input1" v-model.trim="user.mobile" id="floatingInput8" placeholder="Mobile" required />
             <label for="floatingInput8">Mobile</label>
           </div>
         </div>
@@ -42,7 +42,7 @@
       <h3>DATE DE LA RESERVATION</h3>
 
       <div class="d-flex mx-5 gap-1">
-        <input :min="`${current_date}`" type="date" class="form-control" v-model="user.temporary_date"
+        <input :min="`${current_date}`" type="date" class="form-control" v-model="user.temporary_date" required
           placeholder="Date de la réservation" />
       </div>
 
@@ -50,12 +50,12 @@
 
       <div class="d-flex gap-5">
         <div>
-          <input min="09:00" max="18:00" step="900" type="time" class="form-control fill-input3"
+          <input min="09:00" max="18:00" step="900" type="time" class="form-control fill-input3" required
             v-model="user.time_of_booking" placeholder="Heure" />
         </div>
       </div>
       <div>
-        <input min="1" max="10" type="number" class="form-control fill-input2" v-model.trim="user.number_of_people"
+        <input min="1" max="10" type="number" class="form-control fill-input2" v-model.trim="user.number_of_people" required
           placeholder="Nombre de personnes" />
       </div>
       <br>
@@ -275,7 +275,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: column;
+    /* flex-direction: column; */
     /* width: 100%; */
   }
 
@@ -285,7 +285,7 @@
   h3 {
     margin: 1em 0 3em 0;
     margin: 30px;
-    padding: 30px;
+    /* padding: 30px; */
     color: #000;
   }
 
@@ -389,18 +389,16 @@
   }
 
   .fill-input {
-    min-width: 41rem;
+    min-width: 20rem;
   }
 
   .fill-input1 {
-    min-width: 20rem;
+    min-width: 10rem;
   }
 
   .fill-input2 {
     min-width: 15rem;
   }
 
-  .fill-input3 {
-    min-width: 10rem;
-  }
+ 
 </style>

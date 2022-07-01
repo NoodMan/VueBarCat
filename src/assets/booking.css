@@ -4,7 +4,7 @@
 
 
 
-
+pour le code css tableau : min-width et min-height
 
 
 <template><div id="center"><form @submit.prevent="handleSubmit"
