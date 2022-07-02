@@ -210,6 +210,7 @@ a {
   text-decoration-color: #000;
   border-bottom-left-radius: 10px 10px;
   border-bottom-right-radius: 10px 10px;
+  
 }
 
 .space {
@@ -222,6 +223,7 @@ a {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   background: #636463;
   z-index: 10;
+
 }
 
 /* base style + reset */
@@ -254,13 +256,14 @@ body {
 
 /* Layout: wrapper, conatiners */
 .wrapper {
+  
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   flex-direction: column !important;
   max-width: 100rem !important;
   margin: 58px auto !important;
-
+border-radius: 30px;
   border-top: 6px solid #e5a8de;
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
@@ -270,6 +273,8 @@ body {
   background: -o-linear-gradient(39deg, #acbdf5, #e9a4c3, #f9cad4 94%);
   background: linear-gradient(39deg, #acbdf5, #e9a4c3, #f9cad4 94%);
   border-radius: 10px;
+  border-bottom-left-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
 }
 
 .container-main {

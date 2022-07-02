@@ -173,6 +173,8 @@ a {
   border: #636463;
   letter-spacing: 0.1rem;
   text-decoration-color: #000;
+    border-bottom-left-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
 }
 
 material-icons {
@@ -264,6 +266,7 @@ body {
 /* Elements */
 h3 {
   margin: 1em 0 3em 0;
+  color: #000;
 }
 
 h5 {
