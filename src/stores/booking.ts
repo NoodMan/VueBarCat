@@ -5,7 +5,7 @@ export const bookingStore = defineStore({
   id: "booking",
   state: () => ({
     user: {
-      id: "2",
+      id: "",
       temporary_date: "",
       time_of_booking: "10:00",
       number_of_people: "",

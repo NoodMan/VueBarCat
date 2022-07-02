@@ -58,7 +58,6 @@
         const login = await axios
           .post("http://localhost:666/login", this.user)
           .then((response) => {this.user_logged = response.data});
-        // console.log(login);
         if (this.user_logged) {
           this.$router.push("/cats");
         }
