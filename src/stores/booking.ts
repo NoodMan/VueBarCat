@@ -16,7 +16,7 @@ export const bookingStore = defineStore({
   persist: true,
 
   getters: {
-    bookingDate() : Date {
+    bookingDate(): Date {
       return new Date(`${this.user.temporary_date}T${this.user.time_of_booking}:00`);
     }
   },

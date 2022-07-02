@@ -34,7 +34,7 @@ const router = createRouter({
       name: "booking",
       component: () => import("../views/booking.vue"),
     },
-    
+
     {
       path: "/rules",
       name: "rules",
@@ -81,14 +81,14 @@ const router = createRouter({
       component: () => import("../views/free_table.vue"),
     },
   ],
-
-  scrollBehavior(to, from, savedPosition) {
-    if (to.hash) {
-      return {
-        el: to.hash
-      }
-    }
-  },
+  //pour faire des retours
+  // scrollBehavior(to, from, savedPosition) {
+  //   if (to.hash) {
+  //     return {
+  //       el: to.hash
+  //     }
+  //   }
+  // },
 });
 
 

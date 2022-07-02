@@ -10,7 +10,7 @@ export const free_tableStore = defineStore({
   persist: true,
 
   getters: {
-    
+
   },
 
   actions: {},

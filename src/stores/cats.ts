@@ -3,9 +3,9 @@ import { defineStore } from "pinia";
 
 export const useStore = defineStore({
   id: "id",
-  state: () => ({ 
+  state: () => ({
     cats: [],
-  
+
   }),
   getters: {
 

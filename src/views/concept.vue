@@ -1,129 +1,146 @@
 <template>
-<div class="modal"></div>
+  <div class="modal"></div>
 
-	<h3 class="">Facts about Cats!</h3>
+  <h3 class="">Facts about Cats!</h3>
 
-	<div class="wrapper">
-		<div class="avatar"><span class="material-icons size">
-            pets
-        </span></div>
+  <div class="wrapper">
+    <div class="avatar"><span class="material-icons size"> pets </span></div>
 
-		<div class="container-main">
+    <div class="container-main">
+      <h2>LE CONCEPT DU "BLACK CAT COFFEE"</h2>
+      <p>
+        Black Cat Coffee est bar peuplé d’une quinzaine de chats d’origines
+        diverses en totale liberté.
+      </p>
+      <p>
+        Tout en savourant boissons, collations sucrées ou salées, vous pourrez
+        laisser se nouer la relation avec les maîtres des lieux.
+      </p>
+      <p>
+        La particularité de ce « bar à chat » c'est que vous étes chez les
+        chats.
+      </p>
 
-			
-<p>LE CONCEPT DU "BLACK CAT COFFEE"
-    Black Cat Coffee est bar peuplé d’une quinzaine de chats d’origines diverses en totale liberté. Tout en savourant boissons, collations sucrées ou salées, vous pourrez laisser se nouer la relation avec les maîtres des lieux. La particularité de ce « bar à chat » c'est que vous étes chez les chats.
-    
-        UN UNIVERS ADAPTE
-        
-        Ce « bar à chat » a été pensé avant tout pour leur bien-être ! Tout commence par le choix des pensionnaires. Ils ont été sélectionnés pour leur comportement docile ou joueur et leur capacité à vivre en communauté. L’environnement a été adapté pour qu’ils puissent se dépenser en s’amusant enfin, un circuit d’air spécifique garantit une température idéale tout en évitant odeurs et moiteur. L’hygiène est également un point sur lequel le CMC ne transige pas ! Il y a une séparation absolue entre les chats et la zone de confections des commandes et du gel hydroalcoolique est à disposition à l’entrée et à la sortie.
-        
-       </p>
-		</div>
+      <h2>UN UNIVERS ADAPTE</h2>
 
-		<div class="container-main bg-blue">
-			<div class="row">
-				<h5>New fact!</h5>
-				<div class="circle"><span class="material-icons inline-icon">
-                    pets
-                </span></div>
-			</div>
-			<div class="row">
-				<div class="share-toggle hidden">
-					<a target="_blank" href="" class="fb-xfbml-parse-ignore"><button class="btn-share btn-facebook" href=""><i class="fab fa-facebook-f"></i></button></a>
-					<button class="btn-share btn-twitter"><i class="fa fa-twitter"></i></button>
-					<button class="btn-share btn-google"><i class="fa fa-google-plus"></i></button>
-				</div>
-				<h5>Share!</h5>
-
-				<div class="circle">
-
-					<i class="fas fa-share-alt"></i>
-
-				</div>
-			</div>
-		</div>
-        
-        <button class="space" id="border2">
-            
-            <RouterLink to="/home#retourtop">
-                <span class="material-icons">
-                    home
-                </span>Accueil
-            </RouterLink>
-            <RouterLink to="/concept"><span class="material-icons">
-                emoji_objects
-            </span>Concept</RouterLink>
-            <RouterLink to="/cats"><span class="material-icons">
-                pets
-            </span>Les chats</RouterLink>
-            <RouterLink to="/rules"><span class="material-icons">
-                article
-            </span>La charte</RouterLink>
-            <RouterLink to="/booking"><span class="material-icons">
-                edit_calendar
-            </span>Réservation</RouterLink>
-            <RouterLink to="/logout">Déconnexion</RouterLink>     
-        </button>
+      <p>Ce « bar à chat » a été pensé avant tout pour leur bien-être !</p>
+      <p>
+        Tout commence par le choix des pensionnaires. Ils ont été sélectionnés
+        pour leur comportement docile ou joueur et leur capacité à vivre en
+        communauté.
+      </p>
+      <p>
+        L’environnement a été adapté pour qu’ils puissent se dépenser en
+        s’amusant enfin, un circuit d’air spécifique garantit une température
+        idéale tout en évitant odeurs et moiteur.
+      </p>
+      <p>
+        L’hygiène est également un point sur lequel le CMC ne transige pas ! Il
+        y a une séparation absolue entre les chats et la zone de confections des
+        commandes et du gel hydroalcoolique est à disposition à l’entrée et à la
+        sortie.
+      </p>
     </div>
 
-	
+    <div class="container-main bg-blue">
+      <div class="row">
+        <h5></h5>
 
+        <div class="circle">
+          <RouterLink to="/inscription"
+            ><span class="material-icons inline-icon">
+              person_add
+            </span></RouterLink
+          >
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="share-toggle hidden"></div>
+        <h5></h5>
+        <div class="circle">
+          <RouterLink to="/connection"
+            ><span class="material-icons inline-icon"> login </span></RouterLink
+          >
+        </div>
+      </div>
+    </div>
+
+    <button class="space" id="border2">
+      <RouterLink to="/home#retourtop">
+        <span class="material-icons"> home </span>Accueil
+      </RouterLink>
+      <RouterLink to="/concept"
+        ><span class="material-icons"> emoji_objects </span>Concept</RouterLink
+      >
+      <RouterLink to="/cats"
+        ><span class="material-icons"> pets </span>Les chats</RouterLink
+      >
+      <RouterLink to="/rules"
+        ><span class="material-icons"> article </span>La charte</RouterLink
+      >
+      <RouterLink to="/booking"
+        ><span class="material-icons"> edit_calendar </span
+        >Réservation</RouterLink
+      >
+      <RouterLink to="/logout">Déconnexion</RouterLink>
+    </button>
+  </div>
 </template>
 <script src=""></script>
 <style>
-    /* Positioning */
-  /* Display & Box Model */
-  /* Color */
-  /* Text */
-  /* Other */
+/* Positioning */
+/* Display & Box Model */
+/* Color */
+/* Text */
+/* Other */
 
-
-  p{
-    font-size: 20px;
-    letter-spacing: 0.2rem;
+p {
+  font-size: 20px;
+  letter-spacing: 0.2rem;
 }
-  a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    transition: 0.4s;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 5px;
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: 0.4s;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
 }
-
-
-  #border2 {
-
-display: flex;
-justify-content: space-between;
-position: static;
-font-size: 20px !important;
-border: #636463;
-letter-spacing: 0.1rem;
-text-decoration-color: #000;
-
+a:hover {
+  background: linear-gradient(39deg, #acbdf5, #e9a4c3, #f9cad4 94%);
+  color: #636463;
+}
+#border2 {
+  display: flex;
+  justify-content: space-between;
+  position: static;
+  font-size: 20px !important;
+  border: #636463;
+  letter-spacing: 0.1rem;
+  text-decoration-color: #000;
+  border-bottom-left-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
 }
 material-icons {
-        vertical-align: top;
-        font-size: 25px !important;
-    }
+  vertical-align: top;
+  font-size: 25px !important;
+}
 .space {
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 70px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        background: #636463;
-        z-index: 10;
-
-    }
- .size{
-    font-size: 7rem;
-    animation: pulsate 1.5s linear infinite;
-  }
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: #636463;
+  z-index: 10;
+}
+.size {
+  font-size: 5rem;
+  animation: pulsate 1.5s linear infinite;
+}
 /* base style + reset */
 * {
   box-sizing: border-box;
@@ -140,16 +157,14 @@ html {
 }
 
 body {
-
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   font-family: ;
-  font-size: 2rem; 
+  font-size: 2rem;
   background-color: rgba(0, 0, 0, 0.07);
 }
-
 
 /* Layout: wrapper, conatiners */
 .wrapper {
@@ -159,29 +174,30 @@ body {
   flex-direction: column;
   max-width: 90rem;
   margin: 0 auto;
-  
+  border-radius: 10px;
   border-top: 6px solid #e5a8de;
   background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 2px 6px 0  rgba(0, 0, 0, 0.2);
-  background: #C7BCE4;
-    background: -webkit-linear-gradient(39deg,#acbdf5, #E9A4C3, #F9CAD4 94%);
-    background: -moz-linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
-    background: -o-linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
-    background: linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
-   
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  background: #c7bce4;
+  background: -webkit-linear-gradient(39deg, #acbdf5, #e9a4c3, #f9cad4 94%);
+  background: -moz-linear-gradient(39deg, #acbdf5, #e9a4c3, #f9cad4 94%);
+  background: -o-linear-gradient(39deg, #acbdf5, #e9a4c3, #f9cad4 94%);
+  background: linear-gradient(39deg, #acbdf5, #e9a4c3, #f9cad4 94%);
 }
-
-.container-main {
+.bg-blue {
   display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  flex-direction: row;
+  width: 100%;
+  padding: 3rem;
+}
+.container-main {
   align-items: center;
   justify-content: center;
   flex-direction: row;
   width: 100%;
   padding: 3rem;
-}
-
-.bg-blue {
-  /* background: rgba(0, 172, 230, 0.3) */
 }
 
 .wrapper div.container-main:last-child {
@@ -200,11 +216,10 @@ body {
   justify-content: center;
   width: 6em;
   height: 6em;
-  background: #FEFEFE;
+  background: #fefefe;
   border-radius: 50%;
-  
+
   border: 0.5em solid rgba(0, 0, 0, 0.03);
-  
 }
 
 .row {
@@ -216,11 +231,10 @@ body {
   width: 100%;
 }
 
-
-
 /* Elements */
 h3 {
   margin: 1em 0 3em 0;
+  color: #000;
 }
 
 h5 {
@@ -228,13 +242,14 @@ h5 {
 }
 
 span {
-  font-family: 'Quattrocento Sans', sans-serif;
+  font-family: "Quattrocento Sans", sans-serif;
   font-size: 1.6rem;
   text-align: justify;
   animation: fadein 0.5s;
 }
 
-.fa-share-alt, .fa-sync-alt {
+.fa-share-alt,
+.fa-sync-alt {
   font-size: 3rem;
   transition: all 0.3s;
   padding: 1.3rem;
@@ -251,18 +266,23 @@ span {
   color: #00ace6;
 }
 
-
 .fa-paw {
   cursor: default;
   font-size: 5.5rem;
-  
+
   animation: pulsate 1.5s linear infinite;
 }
 
 @keyframes pulsate {
-    0% {transform: scale(1.1, 1.1); }
-    50% {transform: scale(1.2, 1.2);}
-    100% {transform: scale(1.1, 1.1); }
+  0% {
+    transform: scale(1.1, 1.1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1.1, 1.1);
+  }
 }
 
 .circle {
@@ -291,7 +311,7 @@ span {
   display: block;
   width: 3.2rem;
   height: 3.2rem;
-  border: .5rem solid #ccc;
+  border: 0.5rem solid #ccc;
   border-radius: 50%;
   border-color: #ddd transparent #ddd transparent;
   content: " ";
@@ -310,10 +330,10 @@ span {
 /* fade in/out animations */
 @keyframes fadein {
   from {
-      opacity:0;
+    opacity: 0;
   }
   to {
-      opacity:1;
+    opacity: 1;
   }
 }
 
@@ -343,13 +363,11 @@ span {
 }
 
 .btn-share:hover {
-  background: rgba(255, 255, 255, 0.3);;
+  background: rgba(255, 255, 255, 0.3);
 }
 
-
-
 .btn-facebook {
-  background: #43609C;
+  background: #43609c;
 }
 
 .btn-twitter {
@@ -371,9 +389,8 @@ span {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 0;
-  visibility: hidden; 
+  visibility: hidden;
 }
-
 
 .show-modal {
   opacity: 1;
@@ -385,6 +402,4 @@ span {
 .hidden {
   display: none;
 }
-
-
 </style>

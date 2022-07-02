@@ -17,19 +17,19 @@ a {
 
 @media (hover: hover) {
     a:hover {
-      background: #C7BCE4; 
-  background: -webkit-linear-gradient(39deg,#acbdf5, #E9A4C3, #F9CAD4 94%);
-  background: -moz-linear-gradient(39deg,#acbdf5, #E9A4C3, #F9CAD4 94%);
-  background: -o-linear-gradient(39deg,#acbdf5, #E9A4C3, #F9CAD4 94%);
-  background: linear-gradient(39deg,#acbdf5, #E9A4C3, #F9CAD4 94%);
+        background: #C7BCE4;
+        background: -webkit-linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
+        background: -moz-linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
+        background: -o-linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
+        background: linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
     }
-  } 
+}
 
 a:hover {
     color: #636463;
-   
-   
-    }
+
+
+}
 
 .et-hero-tabs,
 .et-slide {
@@ -45,7 +45,7 @@ a:hover {
     display: grid;
 
 
-h1 {
+    h1 {
         font-size: 2rem;
         margin: 0;
         letter-spacing: 1rem;
@@ -63,7 +63,7 @@ h1 {
     padding: 10px !important;
     border-radius: 10px !important;
     background: #C7BCE4;
-    background: -webkit-linear-gradient(39deg,#acbdf5, #E9A4C3, #F9CAD4 94%);
+    background: -webkit-linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
     background: -moz-linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
     background: -o-linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
     background: linear-gradient(39deg, #acbdf5, #E9A4C3, #F9CAD4 94%);
@@ -80,7 +80,7 @@ h1 {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     background: #636463;
     z-index: 10;
-  
+
     &--top {
         position: fixed;
         top: 0;
@@ -88,7 +88,7 @@ h1 {
 }
 
 .et-hero-tab {
-   
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,7 +107,7 @@ h1 {
 }
 
 .et-hero-tab-slider {
-   
+
     position: absolute;
     bottom: 0;
     width: 0;
@@ -138,7 +138,7 @@ h1 {
 img {
     border-radius: 10px !important;
     margin-block: auto !important;
-    width : 550px !important;
+    width: 550px !important;
 
 
 }
@@ -161,9 +161,9 @@ img {
         }
     }
 
-img {
-    width: 100% !important;
-}
+    img {
+        width: 100% !important;
+    }
 
 }
 
