@@ -10,14 +10,15 @@
       <!-- <div class="d-flex flex-column align-items-center align"> -->
       <h1>CONNEXION</h1>
       <br />
-      <!-- <form class="row g-1 needs-validation" novalidate> -->
       <div class="form-floating mb-2">
         <input
           type="text"
+          maxlength="100"
           class="form-control fill-input2"
           id="floatingInput"
           v-model.trim="user.email"
-          placeholder="mail"
+          placeholder="e-mail"
+          required
         />
         <label for="floatingInput">Adresse mail</label>
       </div>
@@ -28,10 +29,12 @@
           class="form-control fill-input2"
           id="floatingInput"
           v-model.trim="user.password"
-          placeholder="mail"
+          placeholder="Mot de passe"
+          required
         />
         <label for="floatingInput">Mot de passe</label>
       </div>
+
       <div class="">
         <div class="col p-3">
           <i> <a href="#!">Mot de passe oublier?</a></i>
@@ -50,7 +53,12 @@
           </button>
         </center>
         <Transition name="bounce">
-          <p v-if="show">Vous etes bien connecter</p>
+          <center>
+            <p v-if="show">Vous etes bien connecter 😺</p>
+            <p v-if="show">
+              ⚠️ vous allez être redirigé vers la page réservation...
+            </p>
+          </center>
         </Transition>
       </div>
       <button class="space" id="border2">
@@ -70,9 +78,9 @@
         <RouterLink id="border-hover" title="Réservation" to="/booking"
           ><span class="material-icons"> edit_calendar </span></RouterLink
         >
-        <RouterLink id="border-hover" title="Déconnexion" to="/logout"
+        <!-- <RouterLink id="border-hover" title="Déconnexion" to="/logout"
           ><span class="material-icons"> logout </span></RouterLink
-        >
+        > -->
       </button>
     </div>
   </form>
@@ -92,6 +100,10 @@ export default {
         .then((response) => {
           this.user_logged = response.data;
         });
+
+      setTimeout(() => {
+        this.$router.push("/booking");
+      }, 3500);
       // if (this.user_logged) {
       //   this.$router.push("/home");
       // }

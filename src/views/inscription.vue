@@ -9,26 +9,18 @@
         <h1>INSCRIPTION</h1>
 
         <div class="row">
-          <!-- <div class="form-floating mb-2">
-          <input
-            type="password"
-            class="form-control fill-input2"
-            id="floatingInput"
-            v-model.trim="user.password"
-            placeholder="Mot de passe"
-          />
-          <label for="floatingInput">Mot de passe</label>
-        </div> -->
           <div class="col">
             <div class="form-floating mb-2">
               <input
                 type="text"
                 title="Saisissez uniquement des lettres"
-                pattern="\D[^0-9]"
+                pattern="[A-Za-z]*"
+                maxlength="100"
                 class="form-control fill-input1"
                 id="floatingInput"
                 v-model.trim="user.lastname"
                 placeholder="nom"
+                required
               />
               <label for="floatingInput">Nom</label>
             </div>
@@ -39,11 +31,13 @@
               <input
                 type="text"
                 pattern="[A-Za-z]*"
+                maxlength="100"
                 title="Saisissez uniquement des lettres"
                 class="form-control fill-input1"
                 id="floatingInput"
                 v-model.trim="user.firstname"
                 placeholder="Prénom"
+                required
               />
               <label for="floatingInput">Prénom</label>
             </div>
@@ -95,7 +89,7 @@
         <div class="form-floating mb-2">
           <input
             type="text"
-            pattern="[A-Za-z]*"
+            pattern="/^([\w\.\+]{1,})([^\W])(@)([\w]{1,})(\.[\w]{1,})+$/"
             class="form-control fill-input"
             id="floatingInput"
             v-model.trim="user.email"
@@ -222,9 +216,14 @@
               Inscription
             </button>
           </center>
-          <Transition name="bounce">
+         <Transition name="bounce">
+          <center>
             <p v-if="show">Merci pour votre inscription 😺</p>
-          </Transition>
+            <p v-if="show">
+              ⚠️ vous allez être redirigé vers la page accueil...
+            </p>
+          </center>
+        </Transition>
         </div>
         <div>
           <i
@@ -253,9 +252,9 @@
           <RouterLink id="border-hover" title="La charte" to="/rules"
             ><span class="material-icons"> article </span></RouterLink
           >
-          <RouterLink id="border-hover" title="Connexion" to="/connection"
+          <!-- <RouterLink id="border-hover" title="Connexion" to="/connection"
             ><span class="material-icons"> login </span></RouterLink
-          >
+          > -->
         </button>
       </div>
     </div>
@@ -282,7 +281,7 @@ export default {
             alert("error 😱");
           }
         });
-
+ setTimeout(()=>{ this.$router.push("/welcome")}, 3500) 
       // if (this.user) {
       //   this.$router.push("/home");
 

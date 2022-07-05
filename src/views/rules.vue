@@ -1,10 +1,35 @@
 <template>
-  <h3 class="">Facts about Cats!</h3>
+  <h3 class="">!</h3>
 
   <div class="wrapper">
     <div class="avatar"><span class="material-icons size"> pets </span></div>
+    <br />
 
-    <p>bla bla bla</p>
+    <h1>La charte de bonne conduite</h1>
+    
+    <br>
+    <br>
+    <h2>Il est interdiction de :</h2>
+   <br>
+   <br>
+    <p> - réveiller un chat qui dort</p>
+    <p> - nourrir les chats (certains aliments sont toxiques...)</p>
+    <p> - leurs donner à boire</p>
+    <p> - prendre un chat dans les bras</p>
+    <p> - hurler / crier</p>
+    <p> - déranger un chat qui mange</p>
+    <p> - d'utiliser le flash de son téléphone portable</p>
+    <p> - partir avec un chat dans son sac !!</p>
+    <br />
+    <h2>Il est recommander de :</h2>
+<br>
+<br>
+    <p> - bien se laver les mains ...</p>
+    <p> - passer un agréable moment avec nos boules de poils</p>
+    <p> - donner pleins d'amour à nos chats...</p>
+    <p> - jouer avec les chats (des jouets sont mis à disposition dans tout le
+      bar) </p>
+    <p> - faire des photos avec nos chats et les partager sur nos réseau!</p>
 
     <div class="container-main bg-blue">
       <div class="row">
@@ -47,7 +72,7 @@
         ><span class="material-icons"> edit_calendar </span
         >Réservation</RouterLink
       >
-      <RouterLink to="/logout">Déconnexion</RouterLink>
+      <!-- <RouterLink to="/logout">Déconnexion</RouterLink> -->
     </button>
   </div>
 </template>
@@ -64,6 +89,12 @@
   
   
   <style>
+  h1 {
+    font-size: 60px;
+  }
+h3 {
+  color: #000 !important;
+}
 .wrapper div.container-main:last-child {
   padding-bottom: 2em;
 }
@@ -173,6 +204,14 @@ body {
 }
 
 .container-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  padding: 3rem;
+}
+container-main {
   display: flex;
   align-items: center;
   justify-content: center;

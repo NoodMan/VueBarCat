@@ -48,7 +48,6 @@
         </div>
       </div>
       <h4>DATE DE LA RESERVATION</h4>
-
       <div class="d-flex mx-5 gap-1">
         <input
           :min="`${current_date}`"
@@ -59,9 +58,7 @@
           placeholder="Date de la réservation"
         />
       </div>
-
       <h4>HEURE DE LA RESERVATION</h4>
-
       <div class="d-flex gap-5">
         <div>
           <input
@@ -100,13 +97,16 @@
           >
             Réservation
           </button>
-        </center>
-        <Transition name="bounce">
-          <p v-if="show">
-            Merci pour votre reservztion, vous allez prochainement recevoir un
-            email de confirmation
-          </p>
+
+          <Transition name="bounce">
+          <center>
+            <p v-if="show">Merci pour votre réservation 😺</p>
+            <p v-if="show">
+              ⚠️ vous allez être redirigé vers la page accueil...
+            </p>
+          </center>
         </Transition>
+        </center>
       </div>
       <button class="space" id="border2">
         <!-- <RouterLink to="/home#retourtop"> -->
@@ -122,9 +122,6 @@
         <RouterLink id="border-hover" title="La charte" to="/rules"
           ><span class="material-icons"> article </span></RouterLink
         >
-        <RouterLink id="border-hover" title="Déconnexion" to="/logout"
-          ><span class="material-icons"> logout </span></RouterLink
-        >
       </button>
     </div>
   </form>
@@ -135,10 +132,6 @@ import axios from "axios";
 import { bookingStore } from "../stores/booking";
 import { loginStore } from "../stores/login";
 import { mapWritableState, mapState } from "pinia";
-
-//je voulais importer les donnes du store user (remplissage automatique)
-// import { sign_upStore } from "@/stores/sign_up";
-// const importSign_upStore = sign_upStore();
 
 export default {
   methods: {
@@ -157,11 +150,15 @@ export default {
             alert("error");
           }
         });
+      setTimeout(() => {
+        this.$router.push("/welcome");
+      }, 3500);
       // if (this.bookingDate) {
       //   this.$router.push("/home");
       // }
     },
   },
+
   data() {
     return {
       show: false,

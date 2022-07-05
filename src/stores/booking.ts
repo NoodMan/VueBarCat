@@ -1,6 +1,5 @@
 import { defineStore } from "pinia";
 
-
 export const bookingStore = defineStore({
   id: "booking",
   state: () => ({
@@ -23,3 +22,5 @@ export const bookingStore = defineStore({
 
   actions: {},
 });
+
+

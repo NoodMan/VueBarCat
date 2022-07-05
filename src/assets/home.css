@@ -9,9 +9,11 @@ button {
 }
 
 a {
-    text-decoration: none;
+    font-family: 'Arima', cursive;
+    font-weight: 900;
     margin: 7px;
     /* display: block ruby; */
+    font-size: 30px;
 
 }
 

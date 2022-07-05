@@ -8,7 +8,6 @@
         @change="showBooking"
         v-model="booking_id"
       >
-        <!-- <option value="">👀</option> -->
         <option
           v-for="booking in table_books"
           :key="booking.id"

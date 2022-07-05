@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
+
 </script>
 
 <template>
@@ -20,6 +21,7 @@ import { RouterLink, RouterView } from "vue-router";
           <span class="material-icons"> login </span>
         </RouterLink>
       </button>
+  
     </nav>
 
     <img classe="" src="../assets/logoblackcatcoffee.png" alt="logo" />
@@ -45,12 +47,14 @@ import { RouterLink, RouterView } from "vue-router";
         ><span class="material-icons"> edit_calendar </span>
         Réservation</RouterLink
       >
-      <RouterLink to="/logout">Déconnexion</RouterLink>
+      <!-- <RouterLink to="/logout">Déconnexion</RouterLink> -->
     </button>
   </section>
 </template>
 
-<style>
+<style !important>
+/* pour les liens avec icone */
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@400;500&family=Gloria+Hallelujah&family=Kalam:wght@300&family=Nunito:wght@300;600;900&display=swap');
 @import "../assets/home.css";
 
 h5 {
@@ -77,9 +81,17 @@ i {
 
 span {
   vertical-align: sub;
-  font-size: 25px !important;
+  font-size: 30px !important;
 }
 
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: 0.4s;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 7px;
+}
 #border2 {
   display: flex;
   justify-content: space-between;

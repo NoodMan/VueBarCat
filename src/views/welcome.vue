@@ -1,7 +1,7 @@
 <template>
   <!-- Main -->
   <main class="et-main">
-    <section class="slide" id="tab-es6">
+    <section class="slide">
       <div class="wrapper">
         <div class="avatar">
           <RouterLink to="/home">
@@ -21,17 +21,23 @@
           </i>
 
           <i>
-            <span id="align" class="material-icons"> phone </span> Réservation
-            par télèphone
-            <span id="align" class="material-icons"> phone_enabled </span></i
-          >
+            <span id="align" class="material-icons"> phone </span> par télèphone
+            <span id="align" class="material-icons"> phone_enabled </span></i>
         </div>
         <div class="espacement">
           <p>Un lieu dédié aux chats</p>
           <p>où vous n'êtes que des invités...</p>
         </div>
-        <h3>bla bla horaires ouverture bla bla</h3>
-
+        <h3>Horaires d'ouverture :</h3>
+        <div class="p1">
+          <p1>Lundi 10:00 à 18:30</p1>
+          <p1>Mardi 10:00 à 18:30</p1>
+          <p1>Mercredi 10:00 à 19:00</p1>
+          <p1>Jeudi 10:00 à 18:30</p1>
+          <p1>Vendredi 10:00 à 19:00</p1>
+          <p1>Samedi 10:00 à 20:00</p1>
+          <p1>Dimanche FERMÉ </p1>
+        </div>
         <div class="container-main bg-blue">
           <div class="row">
             <h5></h5>
@@ -67,18 +73,18 @@
             >Concept</RouterLink
           >
           <RouterLink id="border-hover" to="/cats"
-            ><span class="material-icons"> pets </span>Les chats</RouterLink
+            ><span class="material-icons"> pets </span>Les Chats</RouterLink
           >
           <RouterLink id="border-hover" to="/rules"
-            ><span class="material-icons"> article </span>La charte</RouterLink
+            ><span class="material-icons"> article </span>La Charte</RouterLink
           >
           <RouterLink id="border-hover" to="/booking"
             ><span class="material-icons"> edit_calendar </span
             >Réservation</RouterLink
           >
-          <RouterLink id="border-hover" to="/logout"
+          <!-- <RouterLink id="border-hover" to="/logout"
             ><span class="material-icons"> logout </span>Déconnexion</RouterLink
-          >
+          > -->
         </button>
       </div>
     </section>
@@ -97,6 +103,12 @@
 
 
 <style>
+/* pour la phrase d'accroche! */
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap'); 
+/* pour les horaires */
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Kalam:wght@300&display=swap');
+/* pour les titres avec icones */
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@400;500&family=Gloria+Hallelujah&family=Kalam:wght@300&family=Nunito:wght@300;600;900&display=swap');
 .size {
   font-size: 5rem;
   animation: pulsate 1.5s linear infinite;
@@ -124,7 +136,7 @@ a {
   border-radius: 10px;
   margin: 10px;
   padding: 5px;
-  font-size: 23px;
+  font-size: 25px;
 }
 .cacher {
   color: #000;
@@ -136,8 +148,9 @@ a {
 }
 
 span {
-  vertical-align: top;
-  font-size: 30px !important;
+ vertical-align: sub;
+  font-size: 32px !important;
+  color:#000;
 }
 
 #border-hover:hover {
@@ -151,21 +164,28 @@ span {
 a:hover {
   color: #636463;
 }
-
+h4 {
+  color: #000;
+}
 .rdv {
   /* padding: 40px; */
   letter-spacing: 0.3rem;
   line-height: 3.2;
   margin: auto;
   text-align: center;
+  font-family: 'Kalam', cursive;
+  font-size: 30px;
+  color: azure;
 }
 
 .espacement {
   padding-top: 20px;
   text-align: center;
+  color: rgb(87, 83, 83);
 }
 
 p {
+  font-family: 'Gloria Hallelujah', cursive;
   font-size: 55px;
   letter-spacing: 0.2rem;
 }
@@ -210,7 +230,8 @@ a {
   text-decoration-color: #000;
   border-bottom-left-radius: 10px 10px;
   border-bottom-right-radius: 10px 10px;
-  
+  font-family: 'Arima', cursive;
+  font-weight: 900;
 }
 
 .space {
@@ -223,7 +244,6 @@ a {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   background: #636463;
   z-index: 10;
-
 }
 
 /* base style + reset */
@@ -249,21 +269,19 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  font-family: ;
   font-size: 2rem;
   background-color: rgba(0, 0, 0, 0.07);
 }
 
 /* Layout: wrapper, conatiners */
 .wrapper {
-  
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   flex-direction: column !important;
   max-width: 100rem !important;
   margin: 58px auto !important;
-border-radius: 30px;
+  border-radius: 30px;
   border-top: 6px solid #e5a8de;
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
@@ -297,8 +315,20 @@ border-radius: 30px;
 }
 
 /* Elements */
+.p1,
+p1 {
+  display: block;
+  font-size: 25px;
+  color: azure;
+  text-align: center;
+  font-family: 'Kalam', cursive;
+
+}
 h3 {
-  margin: 1em 0 3em 0;
+  font-family: 'Kalam', cursive;
+  margin: 30px;
+  font-size: 35px;
+  color: azure;
 }
 
 h5 {

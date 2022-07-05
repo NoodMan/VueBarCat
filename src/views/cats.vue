@@ -1,5 +1,5 @@
 <template>
-  <h3 class="">Facts about Cats!</h3>
+  <h3 class="">!</h3>
 
   <div class="wrapper">
     <div class="avatar"><span class="material-icons size"> pets </span></div>
@@ -10,8 +10,12 @@
             <div class="card-front">
               <p>Sheitan</p>
               <center>
-                <img src="../assets/photostudio-8-designify.png" alt="" />
+                <img
+                  src="../assets/7A4857AC-4618-4100-B9F9-98C989809B9F_1_105_c.jpeg"
+                  alt=""
+                />
               </center>
+              <br />
               <p class="card-price">Vous attends...</p>
               <i class="arrow-icon fas fa-arrow-right"></i>
             </div>
@@ -28,8 +32,12 @@
             <div class="card-front">
               <p>Sheitan</p>
               <center>
-                <img src="../assets/photostudio-8-designify.png" alt="" />
+                <img
+                  src="../assets/04A12BFF-8F4C-4CD3-8B0B-B20A6E6780F7_1_201_a.jpeg"
+                  alt=""
+                />
               </center>
+              <br />
               <p class="card-price">Vous attends...</p>
               <i class="arrow-icon fas fa-arrow-right"></i>
             </div>
@@ -46,13 +54,41 @@
             <div class="card-front">
               <p>Sheitan</p>
               <center>
-                <img src="../assets/photostudio-8-designify.png" alt="" />
+                <img
+                  src="../assets/4BA5C845-E11C-42E0-9ECB-7BDEF1B264CF_1_105_c.jpeg"
+                  alt=""
+                />
+              </center>
+              <br />
+              <p class="card-price">Vous attends...</p>
+              <i class="arrow-icon fas fa-arrow-right"></i>
+            </div>
+            <div class="card-back">
+              <RouterLink id="border-hover" to="/booking"
+                ><span class="material-icons"> edit_calendar </span
+                >Reserver?</RouterLink
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card-wrapper">
+          <div class="card">
+            <div class="card-front">
+              <p>Sheitan</p>
+              <center>
+                <img src="../assets/IMG_6285.jpg" alt="" />
               </center>
               <p class="card-price">Vous attends...</p>
               <i class="arrow-icon fas fa-arrow-right"></i>
             </div>
             <div class="card-back">
-              <a href="#" class="btn">Reserver?</a>
+              <RouterLink id="border-hover" to="/booking"
+                ><span class="material-icons"> edit_calendar </span
+                >Reserver?</RouterLink
+              >
             </div>
           </div>
         </div>
@@ -90,18 +126,19 @@
         ><span class="material-icons"> emoji_objects </span>Concept</RouterLink
       >
       <RouterLink to="/cats"
-        ><span class="material-icons"> pets </span>Les chats</RouterLink
+        ><span class="material-icons"> pets </span>Les Chats</RouterLink
       >
       <RouterLink to="/rules"
-        ><span class="material-icons"> article </span>La charte</RouterLink
+        ><span class="material-icons"> article </span>La Charte</RouterLink
       >
       <RouterLink to="/booking"
         ><span class="material-icons"> edit_calendar </span
         >Réservation</RouterLink
       >
-      <RouterLink to="/logout">Déconnexion</RouterLink>
+      <!-- <RouterLink to="/logout">Déconnexion</RouterLink> -->
     </button>
   </div>
+  <h3 class="">!</h3>
 </template>
 
 
@@ -135,6 +172,9 @@ export default {
 
 
 <style>
+/* pour les titres avec icones */
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@400;500&family=Gloria+Hallelujah&family=Kalam:wght@300&family=Nunito:wght@300;600;900&display=swap");
+
 .wrapper div.container-main:last-child {
   padding-bottom: 2em;
 }
@@ -163,6 +203,9 @@ a {
   border-radius: 10px;
   margin: 10px;
   padding: 5px;
+  font-family: "Arima", cursive;
+  font-weight: 900;
+  font-size: 22px;
 }
 
 #border2 {
@@ -173,7 +216,7 @@ a {
   border: #636463;
   letter-spacing: 0.1rem;
   text-decoration-color: #000;
-    border-bottom-left-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
   border-bottom-right-radius: 10px 10px;
 }
 
@@ -188,7 +231,7 @@ material-icons {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 70px;
+  /* height: 70px; */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   background: #636463;
   z-index: 10;
@@ -234,6 +277,9 @@ body {
   flex-direction: column;
   max-width: 90rem;
   margin: 0 auto;
+  border-radius: 10px;
+  border-bottom-left-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
 
   border-top: 6px solid #e5a8de;
   background-color: rgba(255, 255, 255, 0.9);
@@ -252,6 +298,8 @@ body {
   flex-direction: row;
   width: 100%;
   padding: 3rem;
+  border-bottom-left-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
 }
 
 .row {
@@ -286,7 +334,10 @@ h5 {
     transform: scale(1.1, 1.1);
   }
 }
-
+a:hover {
+  background: linear-gradient(39deg, #acbdf5, #e9a4c3, #f9cad4 94%);
+  color: #636463;
+}
 .circle {
   display: flex;
   align-items: center;
@@ -319,6 +370,7 @@ h5 {
 
 img {
   width: 200px;
+  border-radius: 15px;
 }
 
 * {
@@ -336,7 +388,11 @@ body {
   max-width: 1400px;
   margin: auto;
 }
-
+span {
+  vertical-align: sub;
+  font-size: 32px !important;
+  color: #000;
+}
 h1 {
   color: #1a2f42;
   margin: 20px 0;
@@ -378,7 +434,7 @@ h1 span:nth-child(1) {
   height: 100%;
   transform-style: preserve-3d;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-  color: white;
+  border-radius: 20px;
   font-weight: bold;
 }
 
@@ -388,17 +444,13 @@ h1 span:nth-child(1) {
   height: 100%;
   width: 100%;
   padding: 30px;
-  border-radius: 8px;
+  border-radius: 20px;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
 
 .card-front {
-  background: #c7bce4;
-  background: -webkit-linear-gradient(39deg, #acbdf5, #e9a4c3, #f9cad4 94%);
-  background: -moz-linear-gradient(39deg, #acbdf5, #e9a4c3, #f9cad4 94%);
-  background: -o-linear-gradient(39deg, #acbdf5, #e9a4c3, #f9cad4 94%);
-  background: linear-gradient(39deg, #acbdf5, #e9a4c3, #F9CAD494%);
+  background: #d0d5e6;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -411,6 +463,7 @@ h1 span:nth-child(1) {
 .card-front p {
   font-size: 25px;
   line-height: 35px;
+  color: azure;
 }
 
 .arrow-icon {
@@ -424,16 +477,20 @@ h1 span:nth-child(1) {
 }
 
 .card-back {
-  background: #de8ada;
+  background: #c7bce4;
+  background: -webkit-linear-gradient(39deg, #acbdf5, #e9a4c3, #f9cad4 94%);
+  background: -moz-linear-gradient(39deg, #acbdf5, #e9a4c3, #f9cad4 94%);
+  background: -o-linear-gradient(39deg, #acbdf5, #e9a4c3, #f9cad4 94%);
+  background: linear-gradient(39deg, #acbdf5, #e9a4c3, #f9cad4 94%);
   transform: rotateY(180deg);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.card-wrapper:nth-child(even) .card-back {
+/* .card-wrapper:nth-child(even) .card-back {
   background-color: #1a2f42;
-}
+} */
 
 .card-back a {
   display: inline-block;
@@ -449,7 +506,7 @@ h1 span:nth-child(1) {
   transition: background-color 0.3s ease-out, color 0.3s ease-out;
 }
 
-.card-wrapper:nth-child(odd) .card-back a:hover {
+/* .card-wrapper:nth-child(odd) .card-back a:hover {
   background-color: #61b1fc;
   color: #fff;
 }
@@ -457,5 +514,5 @@ h1 span:nth-child(1) {
 .card-wrapper:nth-child(even) .card-back a:hover {
   background-color: #ed5d34;
   color: #fff;
-}
+} */
 </style>
